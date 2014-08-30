@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:id="@+id/LinearLayout01"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+
+		<EditText
+			android:id="@+id/loc_str"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/edit_text_hint" 
+			android:layout_margin="20dp"
+			android:background="@drawable/edit_text_normal"
+			/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/btn_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+
+		<Button
+			android:id="@+id/btn_start"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:layout_weight="1"
+			android:text="@string/btn_start" 
+			android:background="@drawable/round_btn"/>
+
+		<Button
+			android:id="@+id/btn_stop"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:layout_weight="1"
+			android:text="@string/btn_stop"
+			android:background="@drawable/round_btn"/>
+
+		<Button
+			android:id="@+id/btn_query"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:layout_weight="1"
+			android:text="@string/btn_query" 
+			android:background="@drawable/round_btn"
+			/>
+
+	</LinearLayout>
+
+	
+	
+	<ScrollView
+		android:id="@+id/scrollView1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical" >
+
+			<TextView
+				android:id="@+id/info_pad"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 
+				android:layout_margin="2dp"/>
+
+			<TextView
+				android:id="@+id/weather_info"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="2dp" />
+		</LinearLayout>
+	
+	</ScrollView>
+<TextView 
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:text="QQ : 496422558\nEMAIL : fyjc999@gmail.com"
+	android:textColor="#77770000"
+	android:layout_gravity="bottom"/>
+
+</LinearLayout>
